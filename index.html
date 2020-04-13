@@ -50,46 +50,108 @@
             <div class="d gu hz">
                 <div id="gallery-expand" class="scrollspy">
                     <h3>Вступление </h3>
+                    <p>
+                        Выбор профессии это одна из самых важных решений которые мы делаем в жизни. Поэтому мы решили
+                        помочь тем кому предстоит это делать и вот собрали для вас список профессий которые существуют
+                        в мире и востребованы. В статье для каждой профессии вы найдете обьяснение, чем занимаются
+                        обладатели этой профессии и где можно ему научиться.
+                    </p>
                     <br>
                 </div>
 
                 <div id="options" class="scrollspy">
                     <h4>Наука</h4>
-
+                    <ul>
+                        <li>Биохимик</li>
+                        <li>Инженер пищевой промышленности</li>
+                        <li>Инженер данных</li>
+                    </ul>
 
                     <br><br>
                 </div>
 
                 <div id="tech" class="scrollspy">
                     <h4>Новые технологии</h4>
-
+                    <ul>
+                        <li>Веб разработчик</li>
+                        <li>Разработчик игр</li>
+                        <li>Разработчик мобильных приложений</li>
+                        <li>Проектный менеджер</li>
+                        <li>LAN администратор</li>
+                        <li>Пентестер (хакер) </li>
+                        <li>Инженер-программист</li>
+                        <li>Робототехник </li>
+                        <li>Дизайнер интерфейса (UX/UI)</li>
+                        <li>Робототехник</li>
+                    </ul>
                     <br>
                     <br><br>
                 </div>
 
                 <div id="medicine" class="scrollspy">
                     <h4>Медицина</h4>
-
+                    <ul>
+                        <li>Врач</li>
+                    </ul>
                     <br>
                     <br><br>
                 </div>
 
                 <div id="education" class="scrollspy">
                     <h4>Образование</h4>
-
+                    <ul>
+                        <li>Учитель</li>
+                    </ul>
+                    <br>
+                    <br><br>
+                </div>
+                <div id="art" class="scrollspy">
+                    <h4>Искусство</h4>
+                    <ul>
+                        <li>Художник</li>
+                        <li>Архитектор игрового мира</li>
+                        <li>Художник персонажей</li>
+                    </ul>
+                    <br>
+                    <br><br>
+                </div>
+                <div id="construction" class="scrollspy">
+                    <h4>Строительство</h4>
+                    <ul>
+                        <li>Архитектор</li>
+                        <li>Строитель</li>
+                    </ul>
                     <br>
                     <br><br>
                 </div>
 
-                <div id="construction" class="scrollspy">
-                    <h4>Строительство</h4>
+                <div id="media" class="scrollspy">
+                    <h4>Медиа</h4>
+                    <ul>
+                        <li>Интернет журналистика</li>
+                        <li>Блоггер</li>
+                        <li>Smm-специалист</li>
+                        <li>Писатель</li>
+                        <li>Монтажер</li>
+                    </ul>
+                    <br>
+                    <br><br>
+                </div>
+
+                <div id="dead" class="scrollspy">
+                    <h4>Список мертвых профессий которые преподаются в Бишкеке</h4>
 
                     <br>
                     <br><br>
                 </div>
                 <div id="about" class="scrollspy">
                     <h4>О нас</h4>
-                    Над статьями работали участники клуба программирования Vector
+                    Мы студенты коровым пришло в голову мысль помочь школьникам определиться с выбором. Мы недавно
+                    закончили школу и сами стояли перед выбором и искали сайты подобные этому. <br>
+
+
+                    <br>
+                    Над статьями работали участники клуба программирования <b>Vector</b>
                     <br><br>
                 </div>
             </div>
@@ -100,7 +162,10 @@
                     <li><a href="#tech" class="">Новые технологии</a></li>
                     <li><a href="#medicine" class="">Медицина</a></li>
                     <li><a href="#education" class="">Образование</a></li>
+                    <li><a href="#art" class="">Искусство</a></li>
                     <li><a href="#construction" class="">Строительство</a></li>
+                    <li><a href="#media" class="">Медиа</a></li>
+                    <li><a href="#dead" class="">Мертвые профессии </a></li>
                     <li><a href="#about" class="">О нас</a></li>
                 </ul>
             </div>
@@ -119,14 +184,14 @@
         var doc = e.target;
         var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
         var pinned = false;
-        if (top < 500){
+        if (top < 490){
             if(!pinned){
                 var s = $('.table-of-contents');
                 s.removeClass('pinned');
                 s.addClass('pin-top');
                 pinned = false;
             }
-        } else if (top > 500) {
+        } else if (top > 490) {
             if (!pinned){
                 var s = $('.table-of-contents');
                 s.removeClass('pin-top');
