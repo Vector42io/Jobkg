@@ -24,7 +24,20 @@
     </style>
 </head>
 <body>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
+    ym(61870200, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+    });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/61870200" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 <nav class="nav-extended x">
     <div class="nav-background">
         <div class="ea k" style="background-image: url('//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/icon-seamless.png?v=16169594983224640439');"></div>
@@ -39,7 +52,7 @@
 
 
         <div class="nav-header de">
-            <h1>Путеводитель по профессиям в Кыргызстане</h1>
+            <h3>Путеводитель по профессиям в Кыргызстане</h3>
             <div class="ge">Найди свое предназначение в жизни</div>
         </div>
     </div>
@@ -49,7 +62,7 @@
         <div class="e">
             <div class="d gu hz">
                 <div id="gallery-expand" class="scrollspy">
-                    <h3>Вступление </h3>
+                    <h4>Вступление </h4>
                     <p>
                         Выбор профессии это одна из самых важных решений которые мы делаем в жизни. Поэтому мы решили
                         помочь тем кому предстоит это делать и вот собрали для вас список профессий которые существуют
@@ -59,7 +72,7 @@
                     <br>
                 </div>
 
-                <div id="options" class="scrollspy">
+                <div id="science" class="scrollspy">
                     <h4>Наука</h4>
                     <ul>
                         <li>Биохимик</li>
@@ -110,7 +123,7 @@
                     <ul>
                         <li>Художник</li>
                         <li>Архитектор игрового мира</li>
-                        <li>Художник персонажей</li>
+                        <li><a href="game-art/">Художник персонажей</a></li>
                     </ul>
                     <br>
                     <br><br>
@@ -146,7 +159,7 @@
                 </div>
                 <div id="about" class="scrollspy">
                     <h4>О нас</h4>
-                    Мы студенты коровым пришло в голову мысль помочь школьникам определиться с выбором. Мы недавно
+                    Мы студенты которым пришло в голову мысль помочь школьникам определиться с выбором. Мы недавно
                     закончили школу и сами стояли перед выбором и искали сайты подобные этому. <br>
 
 
@@ -158,7 +171,7 @@
             <div class="d gu hv">
                 <ul class="cx table-of-contents hide-on-med-and-down pin-top" style="top: 0px;">
                     <li><a href="#gallery-expand" class="active">Вступление</a></li>
-                    <li><a href="#about" class="">Наука</a></li>
+                    <li><a href="#science" class="">Наука</a></li>
                     <li><a href="#tech" class="">Новые технологии</a></li>
                     <li><a href="#medicine" class="">Медицина</a></li>
                     <li><a href="#education" class="">Образование</a></li>
@@ -184,14 +197,14 @@
         var doc = e.target;
         var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
         var pinned = false;
-        if (top < 490){
+        if (top < 350){
             if(!pinned){
                 var s = $('.table-of-contents');
                 s.removeClass('pinned');
                 s.addClass('pin-top');
                 pinned = false;
             }
-        } else if (top > 490) {
+        } else if (top > 350) {
             if (!pinned){
                 var s = $('.table-of-contents');
                 s.removeClass('pin-top');
@@ -200,7 +213,6 @@
             }
         }
     }
-
 
 </script>
 
